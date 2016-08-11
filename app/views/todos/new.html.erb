@@ -1,0 +1,19 @@
+<h1>Todos#new</h1>
+
+<p>Find me in app/views/todos/new.html.erb</p>
+
+<%= form_for :todo, url: todos_path do |t| %>
+  <p>
+    <%= t.label :title %><br>
+    <%= t.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= t.label :text %><br>
+    <%= t.text_area :text %>
+  </p>
+ 
+  <p>
+    <%= t.submit %>
+  </p>
+<% end %>
