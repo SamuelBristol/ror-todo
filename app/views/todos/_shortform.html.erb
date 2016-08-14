@@ -1,0 +1,7 @@
+<%= form_for Todo.new, remote: true do |f| %>
+  <div class="field">
+    <%= f.text_field :title, placeholder: 'Remember the milk', autofocus: true %>
+    <%= f.check_box :complete, hidden: true %>
+    <%= f.submit '+' %>
+  </div>
+<% end %>

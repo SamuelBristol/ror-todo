@@ -2,8 +2,8 @@
 
 one:
   title: MyString
-  text: MyText
+  complete: false
 
 two:
   title: MyString
-  text: MyText
+  complete: false
