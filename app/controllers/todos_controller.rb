@@ -1,5 +1,5 @@
 class TodosController < ApplicationController
-  before_action :set_todo, only: [:show, :edit, :update, :destroy]
+  before_action :set_todo, only: [:show, :edit, :update, :destroy, :toggle]
 
   # GET /todos
   # GET /todos.json
@@ -59,6 +59,11 @@ class TodosController < ApplicationController
       format.html { redirect_to todos_url, notice: 'Todo was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def toggle
+    @todo.complete = !@todo.complete
+    @todo.save
   end
 
   private
