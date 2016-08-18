@@ -1,3 +1,13 @@
 // Place all the styles related to the Todos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$primaryColor: rgba(255,255,255,1);
+$secondaryColor: rgba(0,0,0,1);
+
+input:checked + a {text-decoration: line-through}
+
+tbody tr:hover {
+    background-color: darken($primaryColor, 30%);
+}
+
